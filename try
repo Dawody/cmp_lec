@@ -1,0 +1,139 @@
+#!/bin/bash
+#####START ROW#####
+clear
+#the special start
+ printf "\e(0\x6c\e(B"
+#the all colums - 1 
+for((i=0 ; i<5 ; i++))
+do
+for((j=0 ; j<20 ; j++))
+do
+ printf "\e(0\x71\e(B"	
+done
+ printf "\e(0\x77\e(B"
+done
+#the last col with special ending 
+for((i=0 ; i<20 ; i++))
+do
+ printf "\e(0\x71\e(B"
+done
+ printf "\e(0\x6b\e(B\n"
+#this work only for bash version (4)
+path=$(pwd)
+readarray -t arr < arr
+x=0
+p=" "
+
+twenty ()
+{
+#theck string length less than 20
+if test ${#s} -gt 20
+then
+clear
+echo -e "\e[91mTOO BIG ELEMENT (  $s )!"
+echo -e "\e[39m"
+exit 0
+fi
+
+#make string length 20
+while test ${#s} -lt  20 
+do
+if test $(echo " ${#s} % 2"|bc) -eq 0
+then
+s="$s$p"
+else
+s="$p$s"
+fi
+done
+}
+
+
+INCELL ()
+{
+s=${arr[$x]}
+x=$(echo "$x + 1 " | bc)
+
+twenty
+#some decorisation before printing
+if test $x -le 6 -o  $(echo "$x % 6 " | bc) -eq 0
+then
+s="\e[1m\e[33m\e[104m$s"
+else
+s="\e[30m\e[42m$s"
+fi
+
+echo -e -n "$s"
+echo -e -n "\e[0m"
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CELL ()
+{
+printf "\e(0\x78\e(B"
+#the all colums - 1 
+for((i=0 ; i<5 ; i++))
+do
+INCELL
+printf "\e(0\x78\e(B"
+done
+#the last col with special ending 
+INCELL
+printf "\e(0\x78\e(B\n"
+}
+for((k=0 ; k<6 ; k++))
+do
+CELL
+##########NEW ROW#################
+#the special start
+ printf "\e(0\x74\e(B"
+#the all colums - 1 
+for((i=0 ; i<5 ; i++))
+do
+for((j=0 ; j<20 ; j++))
+do
+ printf "\e(0\x71\e(B"
+done
+ printf "\e(0\x6e\e(B"
+done
+#the last col with special ending 
+for((i=0 ; i<20 ; i++))
+do
+ printf "\e(0\x71\e(B"
+done
+ printf "\e(0\x75\e(B\n"
+done
+CELL
+############LAST ROW##############
+#the special start
+ printf "\e(0\x6d\e(B"
+#the all colums - 1 
+for((i=0 ; i<5 ; i++))
+do
+for((j=0 ; j<20 ; j++))
+do
+ printf "\e(0\x71\e(B"	
+done
+ printf "\e(0\x76\e(B"
+done
+#the last col with special ending 
+for((i=0 ; i<20 ; i++))
+do
+ printf "\e(0\x71\e(B"
+done
+ printf "\e(0\x6a\e(B\n"
+echo ""
