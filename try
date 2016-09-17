@@ -26,7 +26,7 @@ p=" "
 
 twenty ()
 {
-#theck string length less than 20
+#check string length less than 20
 if test ${#s} -gt 20
 then
 clear
