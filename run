@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo cp ./arr /usr/bin/
+sudo cp ./try /usr/bin/
+#rm ./arr
+#rm ./try
+

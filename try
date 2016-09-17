@@ -19,8 +19,9 @@ do
 done
  printf "\e(0\x6b\e(B\n"
 #this work only for bash version (4)
-path=$(pwd)
 readarray -t arr < arr
+#readarray -t arr < /usr/bin/arr
+
 x=0
 p=" "
 
