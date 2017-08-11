@@ -19,8 +19,8 @@ do
 done
  printf "\e(0\x6b\e(B\n"
 #this work only for bash version (4)
-readarray -t arr < arr
-#readarray -t arr < /usr/bin/arr
+readarray -t arr < arry
+#readarray -t arr < /usr/bin/arry
 
 x=0
 p=" "

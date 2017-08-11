@@ -1,7 +1,22 @@
 #!/bin/bash
 
-sudo cp ./arr /usr/bin/
-sudo cp ./try /usr/bin/
+
+
+touch cmp
+cp ./try ./cmp
+
+
+
+sed   -i '
+22s/.*/#&/
+23s/^#readarray/readarray/
+' cmp 
+
+sudo chmod +x cmp
+sudo cp ./arry /usr/bin/arry
+sudo cp ./cmp /usr/bin/cmp
+rm cmp
+
+
 #rm ./arr
 #rm ./try
-
