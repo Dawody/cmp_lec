@@ -21,5 +21,4 @@ the next version will provide interface for entering the lectures details in the
 instead of modifiding it manually
 
 
-
-![Alt text](/cmp_img?raw=true "cmp_lec")
+![cmp_img](https://user-images.githubusercontent.com/18635951/29413495-397ee6c6-8365-11e7-9744-82009b9127bd.png)
