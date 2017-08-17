@@ -16,7 +16,7 @@ you can read it yourself before running.
 
 
 
-Next
+Next :
 the next version will provide interface for entering the lectures details in the table
 instead of modifiding it manually
 
