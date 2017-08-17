@@ -20,3 +20,6 @@ Next
 the next version will provide interface for entering the lectures details in the table
 instead of modifiding it manually
 
+
+
+![Alt text](/cmp_img?raw=true "cmp_lec")
