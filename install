@@ -17,6 +17,6 @@ sudo cp ./arry /usr/bin/arry
 sudo cp ./cmp /usr/bin/cmp
 rm cmp
 
-
+echo -e "DONE...\n Now you can run cmp"
 #rm ./arr
 #rm ./try
