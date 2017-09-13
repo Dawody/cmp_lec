@@ -1,12 +1,14 @@
 
 <br>
 
-after cloning the project from github<br>
-do the fallowing<
-1. go to the directory where you downloaded the project and open the terminal in this directory<br>
+
+after cloning the project from github
+do the fallowing
+1. go to the directory where you downloaded the project and open the terminal in this directory
 2. `cd cmp_lec<br>`
-3. `./run`		//read the Note below<br>
-4. `cmp`<br>
+3. `./run`.		//read the Note below.
+4. `cmp` .
+
 
 <br>
 
