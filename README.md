@@ -6,7 +6,7 @@ after cloning the project from github
 do the fallowing
 1. go to the directory where you downloaded the project and open the terminal in this directory
 2. `cd cmp_lec`
-3. `./run`.		//read the Note below.
+3. `./install`.		//read the Note below.
 4. `cmp` .
 
 
